@@ -1,0 +1,45 @@
+import turtle
+t= turtle.Turtle()
+t.shape("turtle")
+
+
+color_list  = []
+
+
+color1=input("색상 #1을 입력하세요 : ")
+color_list.append(color1)
+
+color2=input("색상 #2을 입력하세요 : ")
+color_list.append(color2)
+
+color3=input("색상 #3을 입력하세요 : ")
+color_list.append(color3)
+
+
+t.fillcolor(color_list[0])
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+
+t.up()
+t.goto(100, 0)
+t.down()
+
+
+t.fillcolor(color_list[1])
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+
+t.up()
+t.goto(200, 0)
+t.down()
+
+
+t.fillcolor(color_list[2])
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+
+turtle.mainloop()
+turtle.bye()
